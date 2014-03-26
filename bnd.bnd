@@ -1,0 +1,8 @@
+Bundle-Version:0.0.0.${tstamp}
+-buildpath: \
+	org.apache.felix.framework,\
+	osgi.enterprise,\
+	org.apache.felix.gogo.runtime
+Private-Package: \
+	com.thirdmode.jdbc
+Bundle-Activator:com.thirdmode.jdbc.Activator
