@@ -1,7 +1,7 @@
 jdbc-osgi
 =========
 
-Demo of using OSGi registry with a DataSourceFactory service instead of JNDI to to lookup DataSource.
+Demo of using OSGi registry with a *DataSourceFactory* service instead of JNDI to to lookup DataSource.
 
 The OSGi Enterprise Specification defines a JDBC DataSourceFactory Service.  Several things are
 needed to set up and use this service.
@@ -20,6 +20,6 @@ The *lydianblues/jdbc-osgi-runner* project contains the wrapped PostgreSQL JDBC 
 GitHub project *ops4j/org.ops4j.pax.jdbc* contains a bundle that implements steps (2) and (3).
 Finally, client code (in the present bundle) implements steps (4), (5), and (6).  
 
-See the **lydianblues/jdbc-osgi-runner* project for a runnable demo that uses the *lydianblues/osgi-launcher*
+See the *lydianblues/jdbc-osgi-runner* project for a runnable demo that uses the *lydianblues/osgi-launcher*
 launcher.
 
