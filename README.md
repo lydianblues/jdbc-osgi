@@ -1,7 +1,7 @@
 jdbc-osgi
 =========
 
-Demo of using OSGi registry with a *DataSourceFactory* service instead of JNDI to to lookup DataSource.
+Demo of using OSGi registry with a *DataSourceFactory* service instead of JNDI to to lookup the DataSource.
 
 The OSGi Enterprise Specification defines a JDBC DataSourceFactory Service.  Several things are
 needed to set up and use this service.
@@ -9,7 +9,7 @@ needed to set up and use this service.
 1. The stock PostgreSQL JDBC jar must be wrapped as an OSGi bundle.
 2. Implement a PostgreSQL specific version of the *DataSourceFactory* interface.  This interface
    is defined by the OSGi Enterprise Specification.
-3. Register the DataSourceFactory implemention with the OSGi registry, specifying 
+3. Register the *DataSourceFactory* implemention with the OSGi registry, specifying 
    *OSGI_JDBC_DRIVER_CLASS* and *OSGI_JDBC_DRIVER_NAME* registry keys.  
 4. Client will look up the DataSourceFactory using these keys.
 5. Client obtains a DataSource from the DataSourceFactory, providing various configuration properties,
